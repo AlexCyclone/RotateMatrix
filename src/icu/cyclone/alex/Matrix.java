@@ -7,7 +7,7 @@ public class Matrix {
         this.matrix = check(matrix);
     }
 
-    public static int[][] check(int[][] matrix) {
+    private static int[][] check(int[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
             if (matrix[i].length != matrix.length) {
                 throw new IllegalArgumentException("Incorrect array size");
